@@ -1,0 +1,160 @@
+@import url("./styles/furo.css");
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: green;
+}
+
+.main {
+    background: #007fff0a;
+}
+.sidebar-drawer {
+    width: 250px;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+    padding: 20px;
+    background: #007fff08;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar-brand-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar-search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sidebar-search {
+    flex: 1;
+    border: 1px solid #007fff;
+    border-radius: 4px;
+}
+
+.sidebar-scroll {
+    max-height: calc(100% - 150px);
+    overflow-y: auto;
+}
+
+.sidebar-tree {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-tree a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    transition: background-color 0.2s;
+}
+
+.sidebar-tree a:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+.sidebar-tree a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+footer {
+    background-color: #00000014;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-drawer {
+    background: #0180ff29;
+}
+
+.related-pages {
+    margin-bottom: 15px;
+}
+
+.bottom-of-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.left-details {
+    flex: 1;
+    text-align: left;
+}
+
+.copyright {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.muted-link {
+    color: #6c757d;
+}
+
+.muted-link:hover {
+    color: #5a6268;
+}
+
+.content {
+    width: 100%;
+    padding: 0;
+}
+.sidebar-container {
+    padding: 0 1rem;
+}
+
+.article-container {
+    padding: 1rem;
+}
+
+.right-details {
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .bottom-of-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-details,
+    .right-details {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ pathto('static/css/style.css', 1) }}">
+</head>
+<body>
+{%- extends "<furo></furo>/layout.html" %}
+<header>
+</header>
+<main>
+    {{ body|safe }}
+</main>
+<footer>
+</footer>
+</body>
+</html>

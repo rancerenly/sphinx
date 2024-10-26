@@ -19,10 +19,20 @@ extensions = []
 templates_path = ['_templates']
 exclude_patterns = []
 
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath("_themes"))
+
+html_theme = "custom-theme"
+extensions = ["custom-theme"]
+html_theme_path = ["_themes"]
+exclude_patterns = ["_themes"]
 
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'furo'
 html_static_path = ['_static']
+html_theme_path = ['_themes', 'custom-theme']
+html_theme = 'custom-theme'

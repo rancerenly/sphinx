@@ -1,0 +1,9 @@
+[theme]
+inherit = "furo"
+name = "custom-theme"
+version = "0.1.0"
+author = "rancerenly"
+description = "Кастомизированная тема для Sphinx."
+stylesheets = [
+    "custom-theme.css",
+]
